@@ -1,0 +1,12 @@
+.banner {
+  height: 56vh;
+  background-color: $orange;
+  display: flex;
+  border-radius: 0px 0px 40px 40px;
+  align-items: center;
+}
+
+.banner-header {
+  font-size: 112px;
+  padding: 8vw;
+}
