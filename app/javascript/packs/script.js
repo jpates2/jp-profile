@@ -1,7 +1,19 @@
 const bannerHeader = document.querySelector(".banner-header");
 
-console.log("tester");
+const welcomeText = function () {
+  const welcomeContent = ["w", "e", "l", "c", "o", "m", "e"];
+  let welcomeContentArray = [];
 
-bannerHeader.addEventListener("click", function() {
-  console.log("test");
-})
+  for (let i = 0; i < welcomeContent.length; i++) {
+    welcomeTask(i);
+  }
+
+  function welcomeTask(i) {
+    setTimeout(function() {
+      welcomeContentArray.push(welcomeContent[i])
+      bannerHeader.textContent = welcomeContentArray.join("");
+    }, 500 * i);
+  }
+}
+
+welcomeText();
