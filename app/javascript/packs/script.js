@@ -12,7 +12,7 @@ const welcomeText = function () {
     setTimeout(function() {
       welcomeContentArray.push(welcomeContent[i])
       bannerHeader.textContent = welcomeContentArray.join("");
-    }, 500 * i);
+    }, 200 * i);
   }
 }
 
