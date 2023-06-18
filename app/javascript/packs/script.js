@@ -1,15 +1,22 @@
-// window.onbeforeunload = function () {
-//   document.body.scrollTo(0, 0);
-//   console.log("Current scroll X/Y", scrollX, scrollY);
-
-// }
-
 addEventListener("load", (event) => {
   window.scrollTo(0, 0)
   console.log("Reload");
 });
 
 const bannerHeader = document.querySelector(".banner-header");
+const profileInfo = document.querySelector(".profile-info")
+
+const btnScrollToHome = document.querySelector("#home");
+const btnScrollToProject = document.querySelector("#projects");
+const btnScrollToAbout = document.querySelector("#about");
+const btnScrollToContact = document.querySelector("#contact");
+const homeSection = document.querySelector(".home-section");
+const projectSection = document.querySelector(".project-section");
+const aboutSection = document.querySelector(".about-section");
+const contactSection = document.querySelector(".contact-section");
+
+
+// Welcome
 
 const welcomeText = function () {
   const welcomeContent = ["w", "e", "l", "c", "o", "m", "e"];
@@ -27,17 +34,28 @@ const welcomeText = function () {
   }
 }
 
+const hiddenProfile = function () {
+  setTimeout(function() {
+    profileInfo.classList.remove("hidden");
+  }, 1600);
+}
+
+const hiddenProjects = function () {
+  setTimeout(function() {
+    projectSection.classList.remove("hidden");
+    aboutSection.classList.remove("hidden");
+    contactSection.classList.remove("hidden");
+    projectSection.classList.add("fade-in");
+    // projectSection.classList.remove("hidden-delay");
+  }, 2000);
+}
+
 welcomeText();
+hiddenProfile();
+hiddenProjects();
 
 
-const btnScrollToHome = document.querySelector("#home");
-const btnScrollToProject = document.querySelector("#projects");
-const btnScrollToAbout = document.querySelector("#about");
-const btnScrollToContact = document.querySelector("#contact");
-const homeSection = document.querySelector(".home-section");
-const projectSection = document.querySelector(".project-section");
-const aboutSection = document.querySelector(".about-section");
-const contactSection = document.querySelector(".contact-section");
+// Smooth scrolling
 
 btnScrollToProject.addEventListener("click", function(e) {
   projectSection.scrollIntoView({
