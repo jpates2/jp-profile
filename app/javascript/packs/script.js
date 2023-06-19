@@ -37,7 +37,8 @@ const welcomeText = function () {
 const hiddenProfile = function () {
   setTimeout(function() {
     profileInfo.classList.remove("hidden");
-  }, 1600);
+    profileInfo.classList.add("fade-in");
+  }, 1200);
 }
 
 const hiddenProjects = function () {
