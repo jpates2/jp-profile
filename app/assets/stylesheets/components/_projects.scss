@@ -1,0 +1,17 @@
+.project-container {
+  display: flex;
+  // justify-content: space-between;
+  background-color: $light-grey;
+  border-radius: 40px;
+  width: 80vw;
+  padding: 16px 16px 16px 0px;
+  overflow-x: scroll;
+  margin: 0 auto;
+}
+
+.project {
+  background-color: $grey;
+  border-radius: 40px 8px 40px 8px;
+  width: 80vh;
+  margin-left: 16px;
+}
