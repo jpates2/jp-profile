@@ -1,16 +1,20 @@
 .project-container {
   position: relative;
   overflow: hidden;
+
 }
 
 .projects {
   display: flex;
   border-radius: 40px;
-  width: 64vw;
   height: 64vh;
+  width: 64vw;
   margin: 0 auto;
   overflow: scroll;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+
   h5, h2 {
     color: $yellow;
   }
@@ -25,6 +29,7 @@
   display: grid;
   grid-auto-columns: 3fr 2fr;
   grid-auto-flow: column;
+  scroll-snap-align: start;
 }
 
 .project-hidden {
