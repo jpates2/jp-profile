@@ -38,15 +38,26 @@
       <div class="project">
 
         <div class="project-details">
-          <h3 class="project-name">FanFind</h3>
-          <p class = "project-desc">Mobile first web application that help sports fans find the right people and the right place to watch the games of their team.</p>
+          <a href="https://www.fan-find.com", target="_blank"><h2 class="project-name">FanFind</h2></a>
+
+          <p class = "project-desc">Mobile first web application that helps sports fans find the right people and the right place to watch the games of their team.</p>
+          <p>Features include AJAX searching, filtering, chatroom, mapbox.</p>
           <p class = "project-desc">Group project completed as culmination of Le Wagon bootcamp.</p>
-          <h6>Languages used</h6>
-          <h6>Features</h6>
-          <ul>
-            <li>AJAX search and filter</li>
-            <li>Live chatrooms</li>
-            <li>Social media feed</li>
+
+          <h5 class="project-langs">Languages</h5>
+            <p>Ruby on Rails | JavaScript | Stimulus | HTML | CSS | SQL</p>
+
+          <ul class="project-links">
+            <li>
+              <%= link_to "https://www.fan-find.com", target: "_blank" do %>
+                <i class="fa-solid fa-link project-link"></i>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to "https://github.com/WillMolas/FanFind", target: "_blank" do %>
+                <i class="fa-brands fa-square-github project-link"></i>
+              <% end %>
+            </li>
           </ul>
         </div>
 

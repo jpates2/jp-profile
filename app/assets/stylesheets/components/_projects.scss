@@ -13,6 +13,9 @@
   margin: 0 auto;
   overflow: scroll;
   scroll-behavior: smooth;
+  h5, h2 {
+    color: $orange;
+  }
 }
 
 .project {
@@ -88,6 +91,39 @@
 }
 
 .project-details {
-  padding: 40px 0px 40px 40px;
+  padding: 40px 0px 0px 40px;
+  p {
+    margin-bottom: 8px;
+  }
+}
 
+.project-links {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  font-size: 32px;
+  li {
+    margin-right: 24px;
+  }
+}
+
+.project-link, .project-name {
+  color: $light-grey;
+}
+
+.project-link:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+a {
+  text-decoration: none;
+}
+
+.project-name:hover {
+  color: white;
+}
+
+.project-links, .project-langs {
+  margin-top: 16px;
 }
