@@ -8,7 +8,7 @@
   // padding: 16px 16px 16px 0px;
   display: flex;
   border-radius: 40px;
-  width: 72vw;
+  width: 64vw;
   height: 64vh;
   margin: 0 auto;
   overflow: scroll;
@@ -16,13 +16,14 @@
 }
 
 .project {
-  background-color: $orange;
+  background-color: rgba(73, 106, 129, 0.9);
+  color: $light-grey;
   width: 100%;
   height: 100%;
   flex: 1 0 100%;
   display: grid;
   grid-auto-columns: 1fr;
-   grid-auto-flow: column;
+  grid-auto-flow: column;
   // border-radius: 40px 8px 40px 8px;
   // margin: 0 auto;
 }
@@ -43,8 +44,8 @@
   width: 80px;
   margin-top: 28vh;
   // padding: 16px;
-  background-color: $orange;
-  color: $yellow;
+  background-color: rgba(73, 106, 129, 0.9);
+  color: $light-grey;
   border-radius: 50%;
   font-weight: bold;
   font-size: 48px;
@@ -79,8 +80,14 @@
 .project-photo-container {
   display: flex;
   justify-content: end;
+  margin-right: 4vw;
 }
 
 .project-photo {
   height: 64vh;
+}
+
+.project-details {
+  padding: 40px 0px 40px 40px;
+
 }
