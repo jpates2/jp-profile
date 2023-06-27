@@ -11,7 +11,7 @@ const photoScoll = function() {
 
   const height = 64;
   const animationSpeed = 1000;
-  const pause = 6000;
+  const pause = 4000;
   let currentSlide = 1;
   let margTop = 0;
 
@@ -21,7 +21,7 @@ const photoScoll = function() {
   function startSlider() {
   interval = setInterval(function() {
     const slideHeight = portPhotoEx.clientHeight;
-    portPhotoContainer.scrollTop += slideHeight;
+    portPhotos.scrollTop += slideHeight;
 
     // margTop += height;
     // console.log(margLeft);
@@ -37,12 +37,11 @@ const photoScoll = function() {
     function firstSlide() {
       currentSlide++;
       if (currentSlide > portPhoto.length) {
-        portPhotoContainer.scrollTop = 0;
-
         currentSlide = 1;
-        portPhotos.style.marginTop = `0vh`;
+        portPhotos.scrollTop = 0;
         margTop = 0;
 
+        // portPhotos.style.marginTop = `0vh`;
         // portPhotoContainer.css("margin-left", 0);
       }
     }

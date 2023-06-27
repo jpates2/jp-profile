@@ -94,9 +94,14 @@
   display: flex;
   justify-content: end;
   width: 22vw;
-  overflow: hidden;
   justify-self: end;
   padding-right: 3vw;
+  overflow: hidden;
+}
+
+.port-photos {
+  scroll-behavior: smooth;
+  overflow: scroll;
 }
 
 .port-project-photo {
@@ -156,4 +161,16 @@ a {
 
 .project-links, .project-langs {
   margin-top: 24px;
+}
+
+
+// hide scrollbar
+
+.port-photos::-webkit-scrollbar {
+  display: none;
+}
+
+.port-photos {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
