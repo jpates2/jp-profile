@@ -99,7 +99,7 @@
   overflow: hidden;
 }
 
-.port-photos {
+.photos-container {
   scroll-behavior: smooth;
   overflow: scroll;
 }
@@ -166,11 +166,11 @@ a {
 
 // hide scrollbar
 
-.port-photos::-webkit-scrollbar {
+.photos-container::-webkit-scrollbar,.projects::-webkit-scrollbar {
   display: none;
 }
 
-.port-photos {
+.photos-container, .projects {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }

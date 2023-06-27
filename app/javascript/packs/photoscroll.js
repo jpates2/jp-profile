@@ -1,36 +1,19 @@
-// const $slider = $("#slider");
-// let $slideContainer = $slider.find('.slides');
-// let $slides = $slideContainer.find('.slide');
-
 const portPhotoContainer = document.querySelector(".port-project-photo-container");
-const portPhotos = document.querySelector(".port-photos");
+const photosContainer = document.querySelector(".photos-container");
 const portPhoto = document.querySelectorAll(".port-project-photo");
 const portPhotoEx = document.querySelector(".port-project-photo");
 
 const photoScoll = function() {
-
   const height = 64;
   const animationSpeed = 1000;
   const pause = 4000;
   let currentSlide = 1;
-  let margTop = 0;
-
-
   let interval;
 
   function startSlider() {
   interval = setInterval(function() {
     const slideHeight = portPhotoEx.clientHeight;
-    portPhotos.scrollTop += slideHeight;
-
-    // margTop += height;
-    // console.log(margLeft);
-    // portPhotos.style.marginTop = `${String(margTop)}vh`;
-
-    // portPhotos.animate({
-    //     "margin-left": "-=" + width
-    //   }, animationSpeed, firstSlide);
-
+    photosContainer.scrollTop += slideHeight;
     firstSlide();
   }, pause);
 
@@ -38,16 +21,12 @@ const photoScoll = function() {
       currentSlide++;
       if (currentSlide > portPhoto.length) {
         currentSlide = 1;
-        portPhotos.scrollTop = 0;
-        margTop = 0;
-
-        // portPhotos.style.marginTop = `0vh`;
-        // portPhotoContainer.css("margin-left", 0);
+        photosContainer.scrollTop = 0;
       }
     }
   }
 
-  function stopSlider(){
+  function stopSlider() {
     clearInterval(interval);
   }
 
