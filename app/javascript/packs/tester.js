@@ -1,38 +1,38 @@
 
-const shartPhotoContainer = document.querySelector(".shart-photos-container");
-const shartPhotos = document.querySelector(".shart-photos");
-const shartPhoto = document.querySelectorAll(".shart-photo");
-const shartPhotoEx = document.querySelector(".shart-photo");
+const watchPhotoContainer = document.querySelector(".watch-photos-container");
+const watchPhotos = document.querySelector(".watch-photos");
+const watchPhoto = document.querySelectorAll(".watch-photo");
+const watchPhotoEx = document.querySelector(".watch-photo");
 
-const shartPhotoScoll = function() {
-  let currentShartSlide = 1;
+const watchPhotoScoll = function() {
+  let currentWatchSlide = 1;
   let interval;
 
-  function startShartSlider() {
+  function startWatchSlider() {
   interval = setInterval(function() {
-    const slideHeight = shartPhotoEx.clientHeight;
-    shartPhotos.scrollTop += slideHeight;
-    firstShartSlide();
+    const slideHeight = watchPhotoEx.clientHeight;
+    watchPhotos.scrollTop += slideHeight;
+    firstwatchSlide();
   }, pause);
 
 
-    function firstShartSlide() {
-      currentShartSlide++;
-      if (currentShartSlide > shartPhoto.length) {
-        currentShartSlide = 1;
-        shartPhotos.scrollTop = 0;
+    function firstwatchSlide() {
+      currentWatchSlide++;
+      if (currentWatchSlide > watchPhoto.length) {
+        currentWatchSlide = 1;
+        watchPhotos.scrollTop = 0;
       }
     }
   }
 
-  function stopShartSlider () {
+  function stopWatchSlider () {
     clearInterval(interval);
   }
 
-  shartPhotoContainer.addEventListener("mouseenter", stopShartSlider);
-  shartPhotoContainer.addEventListener("mouseleave", startShartSlider);
+  watchPhotoContainer.addEventListener("mouseenter", stopWatchSlider);
+  watchPhotoContainer.addEventListener("mouseleave", startWatchSlider);
 
-  startShartSlider();
+  startWatchSlider();
 };
 
-shartPhotoScoll();
+watchPhotoScoll();
