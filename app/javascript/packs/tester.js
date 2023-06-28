@@ -1,38 +1,38 @@
 
-const watchPhotoContainer = document.querySelector(".watch-photos-container");
-const watchPhotos = document.querySelector(".watch-photos");
-const watchPhoto = document.querySelectorAll(".watch-photo");
-const watchPhotoEx = document.querySelector(".watch-photo");
+const profPhotoContainer = document.querySelector(".prof-photos-container");
+const profPhotos = document.querySelector(".prof-photos");
+const profPhoto = document.querySelectorAll(".prof-photo");
+const profPhotoEx = document.querySelector(".prof-photo");
 
-const watchPhotoScoll = function() {
-  let currentWatchSlide = 1;
+const profPhotoScoll = function() {
+  let currentProfSlide = 1;
   let interval;
 
-  function startWatchSlider() {
+  function startProfSlider() {
   interval = setInterval(function() {
-    const slideHeight = watchPhotoEx.clientHeight;
-    watchPhotos.scrollTop += slideHeight;
-    firstwatchSlide();
+    const slideHeight = profPhotoEx.clientHeight;
+    profPhotos.scrollTop += slideHeight;
+    firstProfSlide();
   }, pause);
 
 
-    function firstwatchSlide() {
-      currentWatchSlide++;
-      if (currentWatchSlide > watchPhoto.length) {
-        currentWatchSlide = 1;
-        watchPhotos.scrollTop = 0;
+    function firstProfSlide() {
+      currentProfSlide++;
+      if (currentProfSlide > profPhoto.length) {
+        currentProfSlide = 1;
+        profPhotos.scrollTop = 0;
       }
     }
   }
 
-  function stopWatchSlider () {
+  function stopProfSlider () {
     clearInterval(interval);
   }
 
-  watchPhotoContainer.addEventListener("mouseenter", stopWatchSlider);
-  watchPhotoContainer.addEventListener("mouseleave", startWatchSlider);
+  profPhotoContainer.addEventListener("mouseenter", stopProfSlider);
+  profPhotoContainer.addEventListener("mouseleave", startpProfSlider);
 
-  startWatchSlider();
+  startProfSlider();
 };
 
-watchPhotoScoll();
+profPhotoScoll();
