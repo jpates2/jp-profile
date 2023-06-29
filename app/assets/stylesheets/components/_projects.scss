@@ -65,6 +65,10 @@
   transition: 0.6s ease;
 }
 
+.arrow-btn:hover {
+  color: $yellow;
+}
+
 .next {
   right: 0;
   margin-right: 4vw;
