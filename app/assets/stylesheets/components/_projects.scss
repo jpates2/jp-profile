@@ -1,7 +1,6 @@
 .project-container {
   position: relative;
   overflow: hidden;
-
 }
 
 .projects {
@@ -109,6 +108,7 @@
 .port-project-photo {
   height: 64vh;
   width: 18vw;
+  scroll-snap-align: start;
 }
 
 .land-project-photo-container {
@@ -120,11 +120,13 @@
   height: 32vh;
   width: 32vw;
   float: right;
+  scroll-snap-align: start;
 }
 
 .photos-container {
   scroll-behavior: smooth;
-  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 .project-details {
