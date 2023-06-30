@@ -23,3 +23,13 @@
 .navbar-link:hover {
   color: $yellow;
 }
+
+.navbar-orange {
+  background-color: $orange;
+  transition: background-color 1s ease-out;
+}
+
+.navbar-yellow {
+  background-color: $yellow;
+  transition: background-color 1s ease-out;
+}
