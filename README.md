@@ -1,1 +1,15 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+**PROFILE**
+
+Profile page displaying projects, personal info and contact details. 
+
+:round_pushpin: [wwww.jesspates.com](https://www.jesspates.com/)
+
+<br>
+
+Built using:
+<section>
+<img height=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg"/> <img height=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/> <img height=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /> <img height=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+</section>
+
+<br>
+
