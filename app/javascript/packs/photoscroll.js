@@ -203,3 +203,31 @@ const profPhotoScoll = function() {
 };
 
 profPhotoScoll();
+
+
+// unused dots
+
+// const dots = document.querySelectorAll(".dot");
+// const dotsContainer = document.querySelector(".project-dots");
+// const project = document.querySelectorAll(".project");
+// const projectContainer = document.querySelector(".projects");
+
+// dotsContainer.addEventListener("click", function(e) {
+//   const clicked = e.target.closest(".dot");
+
+//   // guard clause
+//   if (!clicked) return;
+
+//   // remove active classes
+//   dots.forEach(d => d.classList.remove("dot-active"));
+//   // project.forEach(p => p.classList.remove("project-active"));
+
+//   // activate tab
+//   clicked.classList.add("dot-active");
+
+//   // activate content
+//   // document.querySelector(`.project-${clicked.dataset.tab}`).classList.add("project-active");
+
+//   const slideWidth = project.clientWidth;
+//   projectContainer.scrollLeft += `${slideWidth * clicked.dataset.tab}`;
+// })
