@@ -6,7 +6,7 @@
 .projects {
   display: flex;
   border-radius: 40px;
-  height: 64vh;
+  height: 480px;
   width: 64vw;
   margin: 0 auto;
   overflow: scroll;
@@ -110,7 +110,7 @@
 }
 
 .port-project-photo {
-  height: 64vh;
+  height: 480px;
   width: 18vw;
   scroll-snap-align: start;
 }
@@ -121,7 +121,7 @@
 }
 
 .land-project-photo {
-  height: 32vh;
+  height: 240px;
   width: 32vw;
   float: right;
   scroll-snap-align: start;
