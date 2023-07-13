@@ -4,8 +4,23 @@
   .banner-header {
     font-size: 16vw;
   }
+}
 
+@media only screen and (max-width: 600px) {
   .banner {
     height: 400px;
+  }
+}
+
+
+// mavbar media queries
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    justify-content: flex-start;
+  }
+
+  .navbar-links {
+    font-size: 16px;
   }
 }
