@@ -1,5 +1,11 @@
+// banner media queries
+
 @media only screen and (max-width: 800px) {
   .banner-header {
     font-size: 16vw;
+  }
+
+  .banner {
+    height: 400px;
   }
 }
