@@ -1,4 +1,4 @@
-// banner media queries
+// banner
 
 @media only screen and (max-width: 800px) {
   .banner-header {
@@ -13,7 +13,7 @@
 }
 
 
-// mavbar media queries
+// mavbar
 
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -22,5 +22,26 @@
 
   .navbar-links {
     font-size: 16px;
+  }
+}
+
+
+// profile
+
+@media only screen and (max-width: 1000px) {
+  .profile-info {
+    width: 48vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-info {
+    width: 64vw;
+    height: 160px;
+    font-size: 24px;
+  }
+
+  .profile-photo {
+    width: 120px;
   }
 }
