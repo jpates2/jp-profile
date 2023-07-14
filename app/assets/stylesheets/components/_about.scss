@@ -73,10 +73,6 @@
   cursor: pointer;
 }
 
-// .about-header {
-//   margin-bottom: 24px;
-// }
-
 .about-bubble:hover {
   color: $yellow;
 }
@@ -85,4 +81,8 @@
   a {
     color: $orange;
   }
+}
+
+.modal-header {
+  margin-bottom: 24px;
 }

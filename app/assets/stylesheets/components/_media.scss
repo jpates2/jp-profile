@@ -57,9 +57,39 @@
 }
 
 @media only screen and (max-width: 600px) {
-  #project-header, #about-header, #contact-header {
+  #project-header {
     font-size: 10vw;
     padding: 32vw 10vw 10vw 10vw;
+  }
+
+  #about-header, #contact-header {
+    font-size: 10vw;
+    padding: 24vw 10vw 10vw 10vw;
+  }
+}
+
+
+// about
+
+@media only screen and (max-width: 800px) {
+  .about-bubble {
+    height: 160px;
+    width: 160px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-bubble {
+    height: 100px;
+    width: 100px;
+  }
+
+  .bubble-header {
+    font-size: 16px;
+  }
+
+  .bubble-two, .bubble-three, .bubble-five, .bubble-six {
+    margin-left: 16px;
   }
 }
 
