@@ -54,21 +54,41 @@
   #project-header, #about-header, #contact-header {
     padding: 18vw 10vw 8vw 10vw;
   }
-
-  // .section {
-  //   margin-top: 4vw;
-  // }
-}
-
-@media only screen and (max-width: 800px) {
-//   .section {
-//     margin-top: 8vw;
-//   }
 }
 
 @media only screen and (max-width: 600px) {
   #project-header, #about-header, #contact-header {
     font-size: 10vw;
     padding: 32vw 10vw 10vw 10vw;
+  }
+}
+
+
+// contact
+
+@media only screen and (max-width: 1200px) {
+  .contact-bubble {
+    width: 48vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-bubble {
+    width: 60vw;
+    padding: 64px 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-bubble {
+    width: 80vw;
+  }
+
+  .contact-info {
+    font-size: 16px;
+  }
+
+  .contact-awesome {
+    margin-right: 12px;
   }
 }
