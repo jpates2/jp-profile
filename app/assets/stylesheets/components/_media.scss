@@ -94,6 +94,22 @@
 }
 
 
+// modal windows
+
+@media only screen and (max-width: 1200px) {
+  .modal-window {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-window {
+    font-size: 12px;
+    padding: 3rem 2rem 2rem 2rem;
+  }
+}
+
+
 // contact
 
 @media only screen and (max-width: 1200px) {
