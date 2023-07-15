@@ -51,8 +51,12 @@
 // section headers
 
 @media only screen and (max-width: 1000px) {
-  #project-header, #about-header, #contact-header {
+  #project-header, #contact-header {
     padding: 18vw 10vw 8vw 10vw;
+  }
+
+  #about-header {
+    padding: 8vw 10vw 8vw 10vw;
   }
 }
 
@@ -62,9 +66,14 @@
     padding: 32vw 10vw 10vw 10vw;
   }
 
-  #about-header, #contact-header {
+  #contact-header {
     font-size: 10vw;
     padding: 24vw 10vw 10vw 10vw;
+  }
+
+  #about-header {
+    font-size: 10vw;
+    padding: 12vw 10vw 10vw 10vw;
   }
 }
 
@@ -216,6 +225,16 @@
   .projects {
     width: 80vw;
   }
+
+  .next {
+    margin-right: 32vw;
+    margin-top: -81px;
+  }
+
+  .prev {
+    margin-left: 32vw;
+    margin-top: 64px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -258,5 +277,21 @@
 
   .langs {
     font-size: 14px;
+  }
+
+  .arrow-btn {
+    width: 64px;
+    height: 64px;
+    font-size: 40px;
+  }
+
+  .next {
+    margin-right: 20vw;
+    margin-top: -64px;
+  }
+
+  .prev {
+    margin-left: 20vw;
+    margin-top: 48px;
   }
 }
