@@ -138,3 +138,117 @@
     margin-right: 12px;
   }
 }
+
+
+// projects
+
+@media only screen and (max-width: 1200px) {
+  .project-desc {
+    font-size: 14px;
+  }
+
+  .langs {
+    font-size: 14px;
+  }
+
+  .project-name {
+    margin-bottom: 12px;
+  }
+
+  .project-details {
+    margin-bottom: 8px;
+  }
+
+  .project-links, .project-langs {
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  .project-desc {
+    font-size: 12px;
+  }
+
+  .langs {
+    font-size: 12px;
+  }
+
+  .project-name {
+    margin-bottom: 12px;
+  }
+
+  .project-details {
+    margin-bottom: 8px;
+  }
+
+  .project-links, .project-langs {
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .project-name {
+    margin-bottom: 12px;
+  }
+
+  .project-details {
+    margin-bottom: 8px;
+  }
+
+  .project-links, .project-langs {
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .arrow-btn{
+    position: static;
+  }
+
+  .projects {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .land-project-photo {
+    width: 360px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .land-project-photo {
+    height: 120px;
+    width: 200px;
+  }
+
+  .land-project, .port-project {
+    grid-auto-columns: 2fr 2fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projects {
+    width: 80vw
+  }
+
+  .photos-container {
+    display: none;
+  }
+
+  .project-details {
+    padding: 40px 40px 0px 40px;
+  }
+
+  .port-project, .land-project {
+    grid-auto-columns: 100%;
+  }
+
+  .project-desc {
+    font-size: 14px;
+  }
+
+  .langs {
+    font-size: 14px;
+  }
+}
