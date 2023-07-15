@@ -162,6 +162,10 @@
   .project-links, .project-langs {
     margin-top: 12px;
   }
+
+  .projects {
+    width: 72vw;
+  }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
@@ -184,6 +188,10 @@
   .project-links, .project-langs {
     margin-top: 12px;
   }
+
+  .port-project {
+    grid-auto-columns: 2fr 2fr;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 800px) {
@@ -200,7 +208,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .arrow-btn{
     position: static;
   }
