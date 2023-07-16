@@ -1,56 +1,18 @@
-// banner
 
-@media only screen and (max-width: 800px) {
-  .banner-header {
-    font-size: 16vw;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .banner {
-    height: 400px;
-  }
-}
-
-
-// mavbar
-
-@media only screen and (max-width: 600px) {
-  .navbar {
-    justify-content: flex-start;
-  }
-
-  .navbar-links {
-    font-size: 16px;
-  }
-}
-
-
-// profile
-
-@media only screen and (max-width: 1000px) {
-  .profile-info {
+@media only screen and (max-width: 1200px) {
+  // contact
+  .contact-bubble {
     width: 48vw;
   }
-}
 
-@media only screen and (max-width: 600px) {
-  .profile-info {
-    width: 64vw;
-    height: 160px;
-    font-size: 24px;
-    margin-top: -80px;
-  }
-
-  .profile-photo {
-    width: 120px;
+  // modal windows
+  .modal-window {
+    width: 80%;
   }
 }
-
-
-// section headers
 
 @media only screen and (max-width: 1000px) {
+  // section headers
   #project-header, #contact-header {
     padding: 18vw 10vw 8vw 10vw;
   }
@@ -58,9 +20,33 @@
   #about-header {
     padding: 8vw 10vw 8vw 10vw;
   }
+  // profile
+  .profile-info {
+    width: 48vw;
+  }
+
+  // contact
+  .contact-bubble {
+    width: 60vw;
+    padding: 64px 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  // banner
+  .banner-header {
+    font-size: 16vw;
+  }
+
+  // about
+  .about-bubble {
+    height: 160px;
+    width: 160px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  // section headers
   #project-header {
     font-size: 10vw;
     padding: 32vw 10vw 10vw 10vw;
@@ -75,19 +61,53 @@
     font-size: 10vw;
     padding: 12vw 10vw 10vw 10vw;
   }
-}
 
-
-// about
-
-@media only screen and (max-width: 800px) {
-  .about-bubble {
-    height: 160px;
-    width: 160px;
+  // banner
+  .banner {
+    height: 400px;
   }
-}
 
-@media only screen and (max-width: 600px) {
+  // navbar
+  .navbar {
+    justify-content: flex-start;
+  }
+
+  .navbar-links {
+    font-size: 16px;
+  }
+
+  // profile
+  .profile-info {
+    width: 64vw;
+    height: 160px;
+    font-size: 24px;
+    margin-top: -80px;
+  }
+
+  .profile-photo {
+    width: 120px;
+  }
+
+  // contact
+  .contact-bubble {
+    width: 80vw;
+  }
+
+  .contact-info {
+    font-size: 16px;
+  }
+
+  .contact-awesome {
+    margin-right: 12px;
+  }
+
+  // modal windows
+  .modal-window {
+    font-size: 12px;
+    padding: 3rem 2rem 2rem 2rem;
+  }
+
+  // about
   .about-bubble {
     height: 100px;
     width: 100px;
@@ -100,54 +120,8 @@
   .bubble-two, .bubble-three, .bubble-five, .bubble-six {
     margin-left: 16px;
   }
+
 }
-
-
-// modal windows
-
-@media only screen and (max-width: 1200px) {
-  .modal-window {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .modal-window {
-    font-size: 12px;
-    padding: 3rem 2rem 2rem 2rem;
-  }
-}
-
-
-// contact
-
-@media only screen and (max-width: 1200px) {
-  .contact-bubble {
-    width: 48vw;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .contact-bubble {
-    width: 60vw;
-    padding: 64px 40px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .contact-bubble {
-    width: 80vw;
-  }
-
-  .contact-info {
-    font-size: 16px;
-  }
-
-  .contact-awesome {
-    margin-right: 12px;
-  }
-}
-
 
 // projects
 
@@ -287,7 +261,7 @@
   }
 
   .project-details {
-    padding: 64px 72px 0px 72px;
+    padding: 40px 40px 0px 40px;
   }
 
   .port-project, .land-project {
