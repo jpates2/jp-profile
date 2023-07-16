@@ -151,47 +151,57 @@
 
 // projects
 
-@media only screen and (max-width: 1200px) {
-  .project-desc {
-    font-size: 14px;
-  }
-
-  .langs {
-    font-size: 14px;
-  }
-
-  .project-name {
-    margin-bottom: 12px;
-  }
-
-  .project-details {
-    margin-bottom: 8px;
-  }
-
+@media only screen and (max-width: 1400px) {
   .project-links, .project-langs {
     margin-top: 12px;
   }
+}
+
+@media only screen and (max-width: 1200px) {
+  // .project-desc {
+  //   font-size: 14px;
+  // }
+
+  // .langs {
+  //   font-size: 14px;
+  // }
+
+  // .project-details {
+  //   margin-bottom: 8px;
+  // }
 
   .projects {
     width: 72vw;
   }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1000px) {
-  .project-desc {
-    font-size: 12px;
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+  .project-details {
+    margin-right: 16px;
   }
 
-  .langs {
-    font-size: 12px;
+  .project-desc, .langs {
+    font-size: 15px;
   }
+}
 
+// @media only screen and (min-width: 800px) and (max-width: 1000px) {
+//   .project-desc, .langs {
+//     font-size: 15px;
+//   }
+// }
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
   .project-name {
     margin-bottom: 12px;
   }
 
-  .project-details {
-    margin-bottom: 8px;
+  .project-desc, .langs {
+    font-size: 15px;
+  }
+
+  .project-links {
+    font-size: 28px;
   }
 
   .project-links, .project-langs {
@@ -208,12 +218,19 @@
     margin-bottom: 12px;
   }
 
-  .project-details {
-    margin-bottom: 8px;
-  }
+  // .project-details {
+  //   margin-bottom: 8px;
+  // }
 
   .project-links, .project-langs {
     margin-top: 12px;
+  }
+
+  .port-project {
+    .project-desc, .langs {
+      font-size: 13px;
+      padding-right: 8px;
+    }
   }
 }
 
@@ -243,7 +260,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .land-project-photo {
     height: 120px;
     width: 200px;
@@ -251,6 +268,16 @@
 
   .land-project, .port-project {
     grid-auto-columns: 2fr 2fr;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .project-desc, .langs {
+    font-size: 15px;
+  }
+
+  .project-links {
+    font-size: 28px;
   }
 }
 
@@ -264,18 +291,14 @@
   }
 
   .project-details {
-    padding: 40px 40px 0px 40px;
+    padding: 64px 72px 0px 72px;
   }
 
   .port-project, .land-project {
     grid-auto-columns: 100%;
   }
 
-  .project-desc {
-    font-size: 14px;
-  }
-
-  .langs {
+  .project-desc, .langs {
     font-size: 14px;
   }
 
