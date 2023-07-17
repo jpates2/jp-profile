@@ -123,6 +123,7 @@
 
 }
 
+
 // projects
 
 @media only screen and (max-width: 1400px) {
@@ -132,18 +133,6 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  // .project-desc {
-  //   font-size: 14px;
-  // }
-
-  // .langs {
-  //   font-size: 14px;
-  // }
-
-  // .project-details {
-  //   margin-bottom: 8px;
-  // }
-
   .projects {
     width: 72vw;
   }
@@ -158,12 +147,6 @@
     font-size: 15px;
   }
 }
-
-// @media only screen and (min-width: 800px) and (max-width: 1000px) {
-//   .project-desc, .langs {
-//     font-size: 15px;
-//   }
-// }
 
 @media only screen and (min-width: 900px) and (max-width: 1000px) {
   .project-name {
