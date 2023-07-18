@@ -1,4 +1,11 @@
 
+@media only screen and (max-width: 1400px) {
+  // projects
+  .project-links, .project-langs {
+    margin-top: 12px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   // contact
   .contact-bubble {
@@ -8,6 +15,11 @@
   // modal windows
   .modal-window {
     width: 80%;
+  }
+
+  // projects
+  .projects {
+    width: 72vw;
   }
 }
 
@@ -30,6 +42,29 @@
     width: 60vw;
     padding: 64px 40px;
   }
+
+  // projects
+  .arrow-btn{
+    position: static;
+  }
+
+  .projects {
+    width: 80vw;
+  }
+
+  .next {
+    margin-right: 32vw;
+    margin-top: -81px;
+  }
+
+  .prev {
+    margin-left: 32vw;
+    margin-top: 64px;
+  }
+
+  .land-project-photo {
+    width: 360px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -42,6 +77,18 @@
   .about-bubble {
     height: 160px;
     width: 160px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  // projects
+  .land-project-photo {
+    height: 120px;
+    width: 200px;
+  }
+
+  .land-project, .port-project {
+    grid-auto-columns: 2fr 2fr;
   }
 }
 
@@ -121,120 +168,7 @@
     margin-left: 16px;
   }
 
-}
-
-
-// projects
-
-@media only screen and (max-width: 1400px) {
-  .project-links, .project-langs {
-    margin-top: 12px;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .projects {
-    width: 72vw;
-  }
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1100px) {
-  .project-details {
-    margin-right: 16px;
-  }
-
-  .project-desc, .langs {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (min-width: 900px) and (max-width: 1000px) {
-  .project-name {
-    margin-bottom: 12px;
-  }
-
-  .project-desc, .langs {
-    font-size: 15px;
-  }
-
-  .project-links {
-    font-size: 28px;
-  }
-
-  .project-links, .project-langs {
-    margin-top: 12px;
-  }
-
-  .port-project {
-    grid-auto-columns: 2fr 2fr;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 800px) {
-  .project-name {
-    margin-bottom: 12px;
-  }
-
-  .project-links, .project-langs {
-    margin-top: 12px;
-  }
-
-  .port-project {
-    .project-desc, .langs {
-      font-size: 13px;
-      padding-right: 8px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .arrow-btn{
-    position: static;
-  }
-
-  .projects {
-    width: 80vw;
-  }
-
-  .next {
-    margin-right: 32vw;
-    margin-top: -81px;
-  }
-
-  .prev {
-    margin-left: 32vw;
-    margin-top: 64px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .land-project-photo {
-    width: 360px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .land-project-photo {
-    height: 120px;
-    width: 200px;
-  }
-
-  .land-project, .port-project {
-    grid-auto-columns: 2fr 2fr;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 800px) {
-  .project-desc, .langs {
-    font-size: 15px;
-  }
-
-  .project-links {
-    font-size: 28px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
+  //projects
   .projects {
     width: 80vw
   }
@@ -269,5 +203,74 @@
   .prev {
     margin-left: 20vw;
     margin-top: 48px;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+  // projects
+  .project-details {
+    margin-right: 16px;
+  }
+
+  .project-desc, .langs {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+  // projects
+  .project-name {
+    margin-bottom: 12px;
+  }
+
+  .project-desc, .langs {
+    font-size: 15px;
+  }
+
+  .project-links {
+    font-size: 28px;
+  }
+
+  .project-links, .project-langs {
+    margin-top: 12px;
+  }
+
+  .port-project {
+    grid-auto-columns: 2fr 2fr;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+  .port-project-details {
+    padding-right: -16px;
+    .project-name {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  // projects
+  .project-name {
+    margin-bottom: 12px;
+  }
+
+  .project-links, .project-langs {
+    margin-top: 12px;
+  }
+
+  .port-project {
+    .project-desc, .langs {
+      font-size: 13px;
+      padding-right: 8px;
+    }
+  }
+
+  .project-desc, .langs {
+    font-size: 15px;
+  }
+
+  .project-links {
+    font-size: 28px;
   }
 }
