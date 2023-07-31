@@ -13,6 +13,7 @@ const btnScrollToContact = document.querySelector("#contact");
 const homeSection = document.querySelector(".home-section");
 const projectSection = document.querySelector(".project-section");
 const aboutSection = document.querySelector(".about-section");
+const certSection = document.querySelector(".cert-section");
 const contactSection = document.querySelector(".contact-section");
 
 
@@ -45,6 +46,7 @@ const hiddenProjects = function () {
   setTimeout(function() {
     projectSection.classList.remove("hidden");
     aboutSection.classList.remove("hidden");
+    certSection.classList.remove("hidden");
     contactSection.classList.remove("hidden");
     projectSection.classList.add("fade-in");
     // projectSection.classList.remove("hidden-delay");
