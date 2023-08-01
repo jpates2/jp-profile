@@ -1,0 +1,28 @@
+.cert {
+  background: $orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 72vw;
+  height: 120px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  padding-left: 48px;
+  padding-right: 48px;
+  h4, h5 {
+    margin-bottom: 0px;
+  }
+}
+
+.cert-left {
+  margin-left: 48px;
+}
+
+.cert-right {
+  float: right;
+  margin-right: 48px;
+}
+
+.cert-caret {
+  font-size: 40px;
+}
