@@ -9,6 +9,7 @@ const profileInfo = document.querySelector(".profile-info")
 const btnScrollToHome = document.querySelector("#home");
 const btnScrollToProject = document.querySelector("#projects");
 const btnScrollToAbout = document.querySelector("#about");
+const btnScrollToCert = document.querySelector("#cert");
 const btnScrollToContact = document.querySelector("#contact");
 const homeSection = document.querySelector(".home-section");
 const projectSection = document.querySelector(".project-section");
@@ -80,6 +81,12 @@ btnScrollToHome.addEventListener("click", function(e) {
 
 btnScrollToContact.addEventListener("click", function(e) {
   contactSection.scrollIntoView({
+    behavior: "smooth"
+  })
+})
+
+btnScrollToCert.addEventListener("click", function(e) {
+  certSection.scrollIntoView({
     behavior: "smooth"
   })
 })
