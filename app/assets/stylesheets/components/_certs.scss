@@ -1,8 +1,9 @@
 .cert {
   background: $orange;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
   width: 56vw;
   height: 80px;
   border-radius: 16px;
@@ -25,9 +26,26 @@
 
 .cert-caret {
   font-size: 32px;
+  float: right;
+  margin: auto  0;
 }
 
 .cert-name {
   font-size: 20px;
   margin-bottom: 0px;
+}
+
+.cert-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cert-js {
+  display: inline-block;
 }
