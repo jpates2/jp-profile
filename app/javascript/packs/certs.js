@@ -9,5 +9,14 @@ for (let i = 0; i < certCaret.length; i++) {
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
     }
+
+    if (certCaret[i].classList.contains("fa-caret-down")) {
+      certCaret[i].classList.remove("fa-caret-down");
+      certCaret[i].classList.add("fa-caret-up");
+    } else {
+      certCaret[i].classList.remove("fa-caret-up");
+      certCaret[i].classList.add("fa-caret-down");
+    }
+
   });
 }
