@@ -16,7 +16,7 @@
     color: black;
   }
   a:hover {
-    color: white;
+    color: $light-grey;
   }
 }
 
@@ -37,6 +37,7 @@
 
 .cert-caret:hover {
   cursor: pointer;
+  color: $light-grey;
 }
 
 .cert-name {
