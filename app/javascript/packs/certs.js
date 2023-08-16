@@ -31,25 +31,23 @@ for (let i = 0; i < certCaret.length; i++) {
 
 const revealCerts = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry.target);
   if (!entry.isIntersecting) return;
   entry.target.classList.remove("slide-hidden-right");
   entry.target.classList.remove("slide-hidden-left");
-  console.log(entry.target);
   certObserver.unobserve(entry.target);
 }
 
 const certObserver = new IntersectionObserver(revealCerts, {
   root: null,
-  threshold: 0.15
+  threshold: 1,
 });
 
 certsLeft.forEach(function(cert) {
   certObserver.observe(cert);
-  cert.classList.add("slide-hidden-left")
+  cert.classList.add("slide-hidden-left");
 })
 
 certsRight.forEach(function(cert) {
   certObserver.observe(cert);
-  cert.classList.add("slide-hidden-right")
+  cert.classList.add("slide-hidden-right");
 })

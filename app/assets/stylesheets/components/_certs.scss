@@ -9,6 +9,8 @@
   margin-bottom: 24px;
   padding-left: 48px;
   padding-right: 48px;
+  transition: transform 3s, opacity 2s;
+
   h4, h5 {
     margin-bottom: 0px;
   }
@@ -75,10 +77,10 @@
 
 .slide-hidden-left {
   opacity: 0;
-  transform: translateY(8rem)
+  transform: translateX(28rem);
 }
 
 .slide-hidden-right {
   opacity: 0;
-  transform: translateY(4rem)
+  transform: translateX(-28rem);
 }
