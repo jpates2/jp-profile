@@ -1,4 +1,6 @@
 const certCaret = document.querySelectorAll(".cert-caret");
+const certsLeft = document.querySelectorAll(".cert-left");
+const certsRight = document.querySelectorAll(".cert-right");
 
 for (let i = 0; i < certCaret.length; i++) {
   certCaret[i].addEventListener("click", function() {
@@ -26,3 +28,28 @@ for (let i = 0; i < certCaret.length; i++) {
 
   });
 }
+
+const revealCerts = function (entries, observer) {
+  const [entry] = entries;
+  console.log(entry.target);
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("slide-hidden-right");
+  entry.target.classList.remove("slide-hidden-left");
+  console.log(entry.target);
+  certObserver.unobserve(entry.target);
+}
+
+const certObserver = new IntersectionObserver(revealCerts, {
+  root: null,
+  threshold: 0.15
+});
+
+certsLeft.forEach(function(cert) {
+  certObserver.observe(cert);
+  cert.classList.add("slide-hidden-left")
+})
+
+certsRight.forEach(function(cert) {
+  certObserver.observe(cert);
+  cert.classList.add("slide-hidden-right")
+})

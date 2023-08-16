@@ -72,3 +72,13 @@
 .clearfix {
   clear: both;
 }
+
+.slide-hidden-left {
+  opacity: 0;
+  transform: translateY(8rem)
+}
+
+.slide-hidden-right {
+  opacity: 0;
+  transform: translateY(4rem)
+}
