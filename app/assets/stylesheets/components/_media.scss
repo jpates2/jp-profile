@@ -65,6 +65,14 @@
   .land-project-photo {
     width: 360px;
   }
+
+  // certs
+  .cert-img {
+    position: fixed;
+    width: 100%;
+    top: 20%;
+    left: 0px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -231,6 +239,10 @@
 
   .cert-name {
     font-size: 16px;
+  }
+
+  .cert-img {
+    top: 32%;
   }
 }
 
