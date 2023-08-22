@@ -45,6 +45,8 @@
 .cert-name {
   font-size: 20px;
   margin-bottom: 0px;
+  display: flex;
+  align-items: center;
 }
 
 .cert-details {
@@ -75,15 +77,15 @@
   clear: both;
 }
 
-.slide-hidden-left {
-  opacity: 0;
-  transform: translateX(28rem);
-}
+// .slide-hidden-left {
+//   opacity: 0;
+//   transform: translateX(35vw);
+// }
 
-.slide-hidden-right {
-  opacity: 0;
-  transform: translateX(-28rem);
-}
+// .slide-hidden-right {
+//   opacity: 0;
+//   transform: translateX(-35vw);
+// }
 
 .cert-img {
   position: fixed;

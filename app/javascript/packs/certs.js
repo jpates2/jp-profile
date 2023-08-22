@@ -20,13 +20,18 @@ for (let i = 0; i < certsCaret.length; i++) {
       certsCaret[i].classList.remove("fa-caret-down");
       certsCaret[i].classList.add("fa-caret-up");
       caretSibling.style.fontWeight = "bold";
-      caretSibling.style.fontSize = "24px";
+      if (window.innerWidth > 600) {
+        caretSibling.style.fontSize = "24px";
+      }
     } else {
       certsCaret[i].classList.remove("fa-caret-up");
       certsCaret[i].classList.add("fa-caret-down");
       caretSibling.style.fontWeight = "normal";
-      caretSibling.style.fontSize = "20px";
+      if (window.innerWidth > 600) {
+        caretSibling.style.fontSize = "20px";
+      }
     }
+
 
   });
 }

@@ -67,6 +67,18 @@
   }
 }
 
+@media only screen and (max-width: 900px) {
+  // projects
+  .land-project-photo {
+    height: 120px;
+    width: 200px;
+  }
+
+  .land-project, .port-project {
+    grid-auto-columns: 2fr 2fr;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   // banner
   .banner-header {
@@ -78,18 +90,14 @@
     height: 160px;
     width: 160px;
   }
-}
 
-@media only screen and (max-width: 900px) {
-  // projects
-  .land-project-photo {
-    height: 120px;
-    width: 200px;
+  // certs
+  .cert {
+    width: 64vw;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
-  .land-project, .port-project {
-    grid-auto-columns: 2fr 2fr;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -203,6 +211,26 @@
   .prev {
     margin-left: 20vw;
     margin-top: 48px;
+  }
+
+  // certs
+  .cert {
+    width: 80vw;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .cert-left {
+    margin-left: 24px;
+  }
+
+  .cert-right {
+    float: right;
+    margin-right: 24px;
+  }
+
+  .cert-name {
+    font-size: 16px;
   }
 }
 
