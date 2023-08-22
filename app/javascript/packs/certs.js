@@ -2,6 +2,7 @@ const certsCaret = document.querySelectorAll(".cert-caret");
 const certsLeft = document.querySelectorAll(".cert-left");
 const certsRight = document.querySelectorAll(".cert-right");
 const certsBadge = document.querySelectorAll(".cert-badge");
+const backdrop = document.querySelector(".backdrop");
 
 // Collapsible content
 for (let i = 0; i < certsCaret.length; i++) {
@@ -63,15 +64,36 @@ certsRight.forEach(function(cert) {
 
 
 // Show cert on hover
-for (let i = 0; i < certsBadge.length; i++) {
-  certsBadge[i].addEventListener("mouseover", function() {
-    certsBadge[i].closest(".cert-details").querySelector(".cert-img").classList.remove("hidden");
-  })
-};
 
-for (let i = 0; i < certsBadge.length; i++) {
-  certsBadge[i].addEventListener("mouseout", function() {
+if (window.innerWidth > 1000) {
+  for (let i = 0; i < certsBadge.length; i++) {
+    certsBadge[i].addEventListener("mouseover", function() {
+      certsBadge[i].closest(".cert-details").querySelector(".cert-img").classList.remove("hidden");
+    })
+  };
+
+  for (let i = 0; i < certsBadge.length; i++) {
+    certsBadge[i].addEventListener("mouseout", function() {
+      certsBadge[i].closest(".cert-details").querySelector(".cert-img").classList.add("hidden");
+
+    })
+  };
+}
+
+if (window.innerWidth > 600) {
+  for (let i = 0; i < certsBadge.length; i++) {
+    certsBadge[i].addEventListener("click", function() {
+      certsBadge[i].closest(".cert-details").querySelector(".cert-img").classList.remove("hidden");
+    })
+  };
+
+  backdrop.addEventListener("click", function() {
     certsBadge[i].closest(".cert-details").querySelector(".cert-img").classList.add("hidden");
-
   })
-};
+
+  // for (let i = 0; i < certsBadge.length; i++) {
+  //   certsBadge[i].addEventListener("mouseout", function() {
+
+  //   })
+  // };
+}
