@@ -11,11 +11,20 @@ const btnScrollToProject = document.querySelector("#projects");
 const btnScrollToAbout = document.querySelector("#about");
 const btnScrollToCert = document.querySelector("#cert");
 const btnScrollToContact = document.querySelector("#contact");
+
+const mobScrollToHome = document.querySelector("#mob-home");
+const mobScrollToProject = document.querySelector("#mob-projects");
+const mobScrollToAbout = document.querySelector("#mob-about");
+const mobScrollToCert = document.querySelector("#mob-cert");
+const mobScrollToContact = document.querySelector("#mob-contact");
+
 const homeSection = document.querySelector(".home-section");
 const projectSection = document.querySelector(".project-section");
 const aboutSection = document.querySelector(".about-section");
 const certSection = document.querySelector(".cert-section");
 const contactSection = document.querySelector(".contact-section");
+
+const backdrop = document.querySelector(".backdrop");
 
 
 // Welcome
@@ -86,6 +95,41 @@ btnScrollToContact.addEventListener("click", function(e) {
 })
 
 btnScrollToCert.addEventListener("click", function(e) {
+  certSection.scrollIntoView({
+    behavior: "smooth"
+  })
+})
+
+mobScrollToProject.addEventListener("click", function(e) {
+  backdrop?.classList.add("hidden");
+  projectSection.scrollIntoView({
+    behavior: "smooth"
+  })
+})
+
+mobScrollToAbout.addEventListener("click", function(e) {
+  backdrop?.classList.add("hidden");
+  aboutSection.scrollIntoView({
+    behavior: "smooth"
+  })
+})
+
+mobScrollToHome.addEventListener("click", function(e) {
+  backdrop?.classList.add("hidden");
+  homeSection.scrollIntoView({
+    behavior: "smooth"
+  })
+})
+
+mobScrollToContact.addEventListener("click", function(e) {
+  backdrop?.classList.add("hidden");
+  contactSection.scrollIntoView({
+    behavior: "smooth"
+  })
+})
+
+mobScrollToCert.addEventListener("click", function(e) {
+  backdrop?.classList.add("hidden");
   certSection.scrollIntoView({
     behavior: "smooth"
   })

@@ -1,6 +1,7 @@
 .navbar {
   height: 80px;
   width: 100%;
+  text-align: right;
   display: flex;
   justify-content: flex-end;
   // align-items: center;
@@ -13,6 +14,9 @@
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+}
+
+.navbar-links, .mobile-navbar-links {
   li {
     list-style: none;
   }
@@ -41,7 +45,42 @@
   transition: background-color 1s ease-out;
 }
 
-.mob-menu {
+.mobile-menu {
   display: none;
   font-size: 32px;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  right: 0;
+  background: $yellow;
+  width: 60%;
+  height: 100vh;
+  padding-top: 4rem;
+  padding-right: 2rem;
+  text-align: right;
+}
+
+// .mobile-navbar-links {
+// }
+
+.mobile-navbar-open {
+  display: block !important;
+}
+
+.mobile-navbar-link {
+  font-size: 2rem;
+  padding-top: 4rem;
+}
+
+// .navbar-backdrop {
+//   background-color: rgba(0, 0, 0, 0.6);
+//   backdrop-filter: blur(3px);
+// }
+
+.navbar-index {
+  z-index: 51;
 }
