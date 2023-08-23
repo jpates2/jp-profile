@@ -73,6 +73,14 @@
     top: 20%;
     left: 0px;
   }
+
+  .slide-hidden-left {
+    transform: translateX(20vw);
+  }
+
+  .slide-hidden-right {
+    transform: translateX(-20vw);
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -104,8 +112,16 @@
     width: 64vw;
     padding-left: 32px;
     padding-right: 32px;
+    transition: transform 1s, opacity 2s;
   }
 
+  .slide-hidden-left {
+    transform: translateX(20vw);
+  }
+
+  .slide-hidden-right {
+    transform: translateX(-20vw);
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -226,6 +242,7 @@
     width: 80vw;
     padding-left: 16px;
     padding-right: 16px;
+    transition: transform 3s, opacity 2s;
   }
 
   .cert-left {
@@ -243,6 +260,14 @@
 
   .cert-img {
     top: 32%;
+  }
+
+  .slide-hidden-left {
+    transform: translateX(10vw);
+  }
+
+  .slide-hidden-right {
+    transform: translateX(-10vw);
   }
 }
 
