@@ -12,4 +12,15 @@ const scrollNavbar = function () {
   }
 }
 
-// scrollNavbar();
+// burger menu
+
+const mobMenu = document.querySelector(".mob-menu");
+const backdrop = document.querySelector(".backdrop");
+
+mobMenu.addEventListener("click", function () {
+  backdrop.classList.remove("hidden");
+})
+
+backdrop.addEventListener("click", function () {
+  backdrop.classList.add("hidden");
+})
