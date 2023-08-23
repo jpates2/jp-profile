@@ -22,7 +22,7 @@
   }
 }
 
-#projects, #about, #contact, #cert {
+#projects, #about, #contact, #cert, #stack {
   margin-left: 32px;
 }
 
@@ -39,4 +39,9 @@
 .navbar-yellow {
   background-color: $yellow;
   transition: background-color 1s ease-out;
+}
+
+.mob-menu {
+  display: none;
+  font-size: 32px;
 }

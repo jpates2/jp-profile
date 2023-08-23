@@ -96,7 +96,12 @@
 }
 
 @media only screen and (max-width: 800px) {
-  // banner
+  //navbar
+  #projects, #about, #contact, #cert, #stack {
+    margin-left: 16px;
+  }
+
+// banner
   .banner-header {
     font-size: 16vw;
   }
@@ -141,18 +146,18 @@
     padding: 12vw 10vw 10vw 10vw;
   }
 
+  // navbar
+  .mob-menu {
+    display: block;
+  }
+
+  .navbar-link {
+    display: none;
+  }
+
   // banner
   .banner {
     height: 400px;
-  }
-
-  // navbar
-  .navbar {
-    justify-content: flex-start;
-  }
-
-  .navbar-links {
-    font-size: 16px;
   }
 
   // profile
