@@ -62,18 +62,24 @@
   padding-top: 4rem;
   padding-right: 2rem;
   text-align: right;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
 }
 
-// .mobile-navbar-links {
-// }
-
-.mobile-navbar-open {
-  display: block !important;
+.mobile-navbar-links {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  justify-content: space-evenly;
 }
 
 .mobile-navbar-link {
   font-size: 2rem;
-  padding-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.mobile-navbar-open {
+  display: block !important;
 }
 
 // .navbar-backdrop {
@@ -82,5 +88,5 @@
 // }
 
 .navbar-index {
-  z-index: 51;
+  z-index: 51 !important;
 }
