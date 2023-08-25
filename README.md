@@ -14,5 +14,5 @@ Profile page displaying projects, personal info and contact details.
 
 <section align=center>
 <img src="app/assets/images/newprofile1.png" width="400"> <img src="app/assets/images/newprofile3.png" width="400">
-<img src="app/assets/images/newprofile2.png" width="400"> <img src="app/assets/images/newprofile4.png" width="400">
+<img src="app/assets/images/newprofile5.png" width="400"> <img src="app/assets/images/newprofile4.png" width="400">
 </section>
