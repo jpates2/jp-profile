@@ -139,28 +139,29 @@ document.addEventListener("keydown", function (e) {
 
 
 // const sixWindow = document.querySelector(".six-window");
-// const bubbleSix = document.querySelector(".bubble-six");
+const bubbleSix = document.querySelector(".bubble-six");
 // const closeSix = document.querySelector(".close-six");
-// const overlaySix = document.querySelector(".overlay-six");
+const overlaySix = document.querySelector(".overlay-six");
+const cvImg = document.querySelector(".cv-img");
 
-// const closeSixWindow = function() {
-//   sixWindow.classList.add("hidden");
-//   overlaySix.classList.add("hidden");
-// };
+const closeSixWindow = function() {
+  cvImg.classList.add("hidden");
+  overlaySix.classList.add("hidden");
+};
 
-// const openSixWindow = function() {
-//   sixWindow.classList.remove("hidden");
-//   overlaySix.classList.remove("hidden");
-// }
+const openSixWindow = function() {
+  cvImg.classList.remove("hidden");
+  overlaySix.classList.remove("hidden");
+}
 
-// bubbleSix.addEventListener("click", openSixWindow);
+bubbleSix.addEventListener("click", openSixWindow);
 
 // closeSix.addEventListener("click", closeSixWindow);
 
-// overlaySix.addEventListener("click", closeSixWindow);
+overlaySix.addEventListener("click", closeSixWindow);
 
-// document.addEventListener("keydown", function (e) {
-//   if (e.key === "Escape" && !sixWindow.classList.contains("hidden")) {
-//     closeSixWindow();
-//   }
-// });
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !sixWindow.classList.contains("hidden")) {
+    closeSixWindow();
+  }
+});
