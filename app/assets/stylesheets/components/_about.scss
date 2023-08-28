@@ -1,6 +1,11 @@
 .about-bubbles {
   display: flex;
   justify-content: center;
+  transition: transform 1.5s;
+}
+
+.about-bubbles-scale {
+  transform: scale(0.5);
 }
 
 .about-bubble {

@@ -165,3 +165,24 @@ document.addEventListener("keydown", function (e) {
     closeSixWindow();
   }
 });
+
+
+// transform scale
+
+const aboutBubbles = document.querySelectorAll(".about-bubbles");
+
+const revealBubble = function(entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("about-bubbles-scale");
+  bubbleObserver.unobserve(entry.target);
+};
+
+const bubbleObserver = new IntersectionObserver(revealBubble, {
+  root: null,
+  threshold: 1
+})
+
+aboutBubbles.forEach(function(bubble) {
+  bubbleObserver.observe(bubble);
+})
