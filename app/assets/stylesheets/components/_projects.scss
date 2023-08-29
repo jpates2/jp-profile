@@ -1,18 +1,20 @@
 .project-container {
   position: relative;
   overflow: hidden;
+  margin: 0;
 }
 
 .projects {
-  display: flex;
+  // display: flex;
   border-radius: 40px;
   height: 480px;
-  width: 64vw;
+  width: 100vw;
   margin: 0 auto;
-  overflow: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  overflow-x: scroll;
+  overflow: hidden;
+  // overflow: scroll;
+  // scroll-behavior: smooth;
+  // scroll-snap-type: x mandatory;
+  // overflow-x: scroll;
 
   h5, h2 {
     color: white;
@@ -20,13 +22,20 @@
 }
 
 .project {
+  position: absolute;
+  top: 0;
   background-color: rgba(245, 138, 7, 0.9);
   color: white;
   width: 100%;
+  padding: 0px 14vw;
   height: 100%;
-  flex: 1 0 100%;
+  // flex-grow: 1;
+  // flex-shrink: 0;
+  // flex-basis: 100%;
+  // flex: 1 0 100%;
   scroll-snap-align: start;
   overflow: hidden;
+  transition: transform 1s;
 }
 
 .port-project {
@@ -64,7 +73,7 @@
   transition: 0.6s ease;
 
   top: 50%;
-  z-index: 10;
+  // z-index: 10;
 }
 
 .arrow-btn:hover {
@@ -111,7 +120,6 @@
 
 .port-project-photo-container {
   margin-right: 2vw;
-
 }
 
 .port-project-photo {
@@ -121,9 +129,11 @@
   scroll-snap-align: start;
 }
 
-.land-project-photo-container {
-  margin-right: 2vw;
-}
+// temp-fixing
+// .land-project-photo-container {
+  // margin-right: 2vw;
+  // width: 400px;
+// }
 
 .land-project-photo {
   height: 240px;
