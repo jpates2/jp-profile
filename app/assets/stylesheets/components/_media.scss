@@ -1,11 +1,3 @@
-
-@media only screen and (max-width: 1400px) {
-  // projects
-  .project-links, .project-langs {
-    margin-top: 12px;
-  }
-}
-
 @media only screen and (max-width: 1200px) {
   // contact
   .contact-bubble {
@@ -17,10 +9,16 @@
     width: 80%;
   }
 
-  // projects temp-fixing
-  // .projects {
-  //   width: 72vw;
-  // }
+  // projects
+  .project-photo-container {
+    padding-left: 6vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .project-photo-container {
+    padding-left: 4vw;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -44,28 +42,42 @@
   }
 
   // projects
-  .arrow-btn{
-    position: static;
-  }
-
-  // temp-fixing
-  // .projects {
-  //   width: 80vw;
+  // .port-project-photo {
+  //   width: 200px;
   // }
 
-  .next {
-    margin-right: 32vw;
-    margin-top: -81px;
-  }
-
-  .prev {
-    margin-left: 32vw;
-    margin-top: 64px;
-  }
-
   .land-project-photo {
-    width: 360px;
+    height: 120px;
+    width: 200px;
   }
+
+  .land-project {
+    display: grid;
+    grid-auto-columns: 2fr 1fr;
+    grid-auto-flow: column;
+  }
+
+  // .project-photo-container {
+  //   padding-left: 24vw;
+  // }
+
+  // .arrow-btn{
+  //   position: static;
+  // }
+
+  // .next {
+  //   margin-right: 32vw;
+  //   margin-top: -81px;
+  // }
+
+  // .prev {
+  //   margin-left: 32vw;
+  //   margin-top: 64px;
+  // }
+
+  // .project-photo-container {
+  //   padding-left: 3vw;
+  // }
 
   // certs
   .cert-img {
@@ -89,17 +101,17 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
-  // projects
-  .land-project-photo {
-    height: 120px;
-    width: 200px;
-  }
+// @media only screen and (max-width: 900px) {
+//   // projects
+//   .land-project-photo {
+//     height: 120px;
+//     width: 200px;
+//   }
 
-  .land-project, .port-project {
-    grid-auto-columns: 2fr 2fr;
-  }
-}
+//   .land-project, .port-project {
+//     grid-auto-columns: 2fr 2fr;
+//   }
+// }
 
 @media only screen and (max-width: 800px) {
   //navbar
@@ -132,6 +144,21 @@
 
   .slide-hidden-right {
     transform: translateX(-20vw);
+  }
+
+  // projects
+  .arrow-btn{
+    position: static;
+  }
+
+  .next {
+    margin-right: 32vw;
+    margin-top: -81px;
+  }
+
+  .prev {
+    margin-left: 32vw;
+    margin-top: 64px;
   }
 }
 
