@@ -75,9 +75,13 @@
   //   margin-top: 64px;
   // }
 
-  // .project-photo-container {
-  //   padding-left: 3vw;
-  // }
+  .project-photo-container {
+    padding-left: 0;
+  }
+
+  .project-details {
+    padding: 40px 24px;
+  }
 
   // certs
   .cert-img {
@@ -147,18 +151,47 @@
   }
 
   // projects
-  .arrow-btn{
-    position: static;
+  // .arrow-btn{
+  //   position: static;
+  // }
+
+  // .next {
+  //   margin-right: 32vw;
+  //   margin-top: -81px;
+  // }
+
+  // .prev {
+  //   margin-left: 32vw;
+  //   margin-top: 64px;
+  // }
+
+
+  .photos-container {
+    display: none;
+  }
+
+  .project-details {
+    padding: 40px 40px 0px 40px;
+  }
+
+  .port-project, .land-project {
+    grid-auto-columns: 100%;
+  }
+
+  .project-desc, .langs {
+    font-size: 14px;
+  }
+
+  .arrow-btn {
+    top: 86%;
   }
 
   .next {
-    margin-right: 32vw;
-    margin-top: -81px;
+    margin-right: 20vw;
   }
 
   .prev {
-    margin-left: 32vw;
-    margin-top: 64px;
+    margin-left: 20vw;
   }
 }
 
@@ -243,41 +276,53 @@
   }
 
   //projects temp fixing
+  .project-details {
+    padding: 40px 0px 0px 0px;
+  }
+
+  .projects {
+    height: 520px;
+  }
+
+  .arrow-btn {
+    top: 92%;
+  }
+
   // .projects {
   //   width: 80vw
   // }
 
-  .photos-container {
-    display: none;
-  }
+  // .photos-container {
+  //   display: none;
+  // }
 
-  .project-details {
-    padding: 40px 40px 0px 40px;
-  }
+  // .project-details {
+  //   padding: 40px 40px 0px 40px;
+  // }
 
-  .port-project, .land-project {
-    grid-auto-columns: 100%;
-  }
+  // .port-project, .land-project {
+  //   grid-auto-columns: 100%;
+  // }
 
-  .project-desc, .langs {
-    font-size: 14px;
-  }
+  // .project-desc, .langs {
+  //   font-size: 14px;
+  // }
 
-  .arrow-btn {
-    width: 64px;
-    height: 64px;
-    font-size: 40px;
-  }
+  // .arrow-btn {
+  //   width: 64px;
+  //   height: 64px;
+  //   font-size: 40px;
+  // }
 
-  .next {
-    margin-right: 20vw;
-    margin-top: -64px;
-  }
+  // .next {
+  //   margin-right: 20vw;
+  //   margin-top: -64px;
+  // }
 
-  .prev {
-    margin-left: 20vw;
-    margin-top: 48px;
-  }
+  // .prev {
+  //   margin-left: 20vw;
+  //   margin-top: 48px;
+  // }
 
   // certs
   .cert {
