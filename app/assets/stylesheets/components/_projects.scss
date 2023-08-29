@@ -113,19 +113,20 @@
 
 .project-photo-container {
   display: flex;
-  justify-content: end;
-  justify-self: end;
+  padding-left: 8vw;
+  // justify-content: center;
+  // justify-self: center;
   overflow: hidden;
 }
 
-.port-project-photo-container {
-  margin-right: 2vw;
-}
+// .port-project-photo-container {
+//   margin-right: 2vw;
+// }
 
 .port-project-photo {
   height: 480px;
   width: 240px;
-  float: right;
+  // float: right;
   scroll-snap-align: start;
 }
 
@@ -138,7 +139,7 @@
 .land-project-photo {
   height: 240px;
   width: 400px;
-  float: right;
+  // float: right;
   scroll-snap-align: start;
 }
 
