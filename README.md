@@ -13,6 +13,8 @@ Profile page displaying projects, personal info and contact details.
 <br>
 
 <section align=center>
-<img src="app/assets/images/newprofile1.png" width="400"> <img src="app/assets/images/newprofile3.png" width="400">
-<img src="app/assets/images/newprofile5.png" width="400"> <img src="app/assets/images/newprofile4.png" width="400">
+<img src="app/assets/images/newprofile1.png" width="600"><br>
+<img src="app/assets/images/newprofile5.png" width="600"><br>
+<img src="app/assets/images/newprofile3.png" width="600"><br>
+<img src="app/assets/images/newprofile4.png" width="600">
 </section>
