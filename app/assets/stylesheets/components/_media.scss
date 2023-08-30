@@ -10,16 +10,27 @@
   }
 
   // projects
-  .project-photo-container {
-    padding-left: 6vw;
+  .land-project-photo {
+    height: 120px;
+    width: 200px;
   }
+
+  .land-project {
+    display: grid;
+    grid-auto-columns: 2fr 1fr;
+    grid-auto-flow: column;
+  }
+
+  // .project-photo-container {
+  //   padding-left: 6vw;
+  // }
 }
 
-@media only screen and (max-width: 1200px) {
-  .project-photo-container {
-    padding-left: 4vw;
-  }
-}
+// @media only screen and (max-width: 1200px) {
+//   .project-photo-container {
+//     padding-left: 4vw;
+//   }
+// }
 
 @media only screen and (max-width: 1000px) {
   // section headers
@@ -46,16 +57,16 @@
   //   width: 200px;
   // }
 
-  .land-project-photo {
-    height: 120px;
-    width: 200px;
-  }
+  // .land-project-photo {
+  //   height: 120px;
+  //   width: 200px;
+  // }
 
-  .land-project {
-    display: grid;
-    grid-auto-columns: 2fr 1fr;
-    grid-auto-flow: column;
-  }
+  // .land-project {
+  //   display: grid;
+  //   grid-auto-columns: 2fr 1fr;
+  //   grid-auto-flow: column;
+  // }
 
   // .project-photo-container {
   //   padding-left: 24vw;
@@ -75,13 +86,13 @@
   //   margin-top: 64px;
   // }
 
-  .project-photo-container {
-    padding-left: 0;
-  }
+  // .project-photo-container {
+  //   padding-left: 0;
+  // }
 
-  .project-details {
-    padding: 40px 24px;
-  }
+  // .project-details {
+  //   padding: 40px 24px;
+  // }
 
   // certs
   .cert-img {

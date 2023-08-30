@@ -27,7 +27,6 @@ const fanfindPhotoScoll = function() {
       }
     }
   }
-
   function stopFanfindSlider() {
     clearInterval(interval);
   }
