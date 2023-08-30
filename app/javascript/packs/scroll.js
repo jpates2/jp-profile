@@ -37,7 +37,6 @@ const slider = function () {
     } else {
       curSlide++;
     }
-    console.log(curSlide);
     goToSlide(curSlide);
   };
 
@@ -47,7 +46,6 @@ const slider = function () {
     } else {
       curSlide--;
     }
-    console.log(curSlide);
     goToSlide(curSlide);
   };
 

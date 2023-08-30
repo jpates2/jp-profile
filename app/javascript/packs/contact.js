@@ -7,6 +7,5 @@ contactTalk.addEventListener("click", function () {
     content.style.maxHeight = null;
   } else {
     content.style.maxHeight = content.scrollHeight + "px";
-    console.log(content.scrollHeight);
   }
 })

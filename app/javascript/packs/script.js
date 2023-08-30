@@ -1,6 +1,5 @@
 addEventListener("load", (event) => {
   window.scrollTo(0, 0)
-  console.log("Reload");
 });
 
 const bannerHeader = document.querySelector(".banner-header");
