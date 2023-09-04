@@ -19,7 +19,47 @@
 
     <div class="projects">
 
-      <div class="project land-project project-1 project-active">
+      <div class="project port-project project-1 project-active">
+
+        <div class="project-details">
+          <a href="https://main--stirring-bunny-e3e887.netlify.app/", target="_blank"><h2 class="project-name">Pit Stop</h2></a>
+
+          <p class="project-desc">Landing page design for ficitonal London street food market with multiple vendors. Goal is to design and build out individual landing page for each vendor</p>
+          <p class="project-desc">Mobile first with responsive design to ensure page maintains appearance on larger screens.</p>
+
+          <h5 class="project-langs">Languages</h5>
+            <p class="langs">CSS | HTML | JavaScript</p>
+
+          <ul class="project-links">
+            <li>
+              <%= link_to "https://main--stirring-bunny-e3e887.netlify.app/", target: "_blank" do %>
+                <i class="fa-solid fa-link project-link"></i>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to "https://github.com/jpates2/pitstop", target: "_blank" do %>
+                <i class="fa-brands fa-square-github project-link"></i>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pitstop-photos-container project-photo-container port-project-photo-container">
+          <div class="pitstop-photos photos-container">
+            <%= image_tag('pitstop1.png', class: "pitstop-photo port-project-photo") %>
+            <%= image_tag('pitstop2.png', class: "pitstop-photo port-project-photo") %>
+            <%= image_tag('pitstop3.png', class: "pitstop-photo port-project-photo") %>
+            <%= image_tag('pitstop4.png', class: "pitstop-photo port-project-photo") %>
+            <%= image_tag('pitstop5.png', class: "pitstop-photo port-project-photo") %>
+            <%= image_tag('pitstop6.png', class: "pitstop-photo port-project-photo") %>
+            <%= image_tag('pitstop7.png', class: "pitstop-photo port-project-photo") %>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="project land-project project-2">
 
         <div class="project-details">
           <a href="https://gameon-ur5o.onrender.com/", target="_blank"><h2 class="project-name">GameOn</h2></a>
@@ -60,7 +100,7 @@
       </div>
 
 
-      <div class="project project-2 port-project">
+      <div class="project project-3 port-project">
 
         <div class="port-project-details project-details">
           <a href="https://www.fan-find.com", target="_blank"><h2 class="project-name">FanFind</h2></a>
@@ -98,7 +138,7 @@
       </div>
 
 
-      <div class="project project-3 land-project">
+      <div class="project project-4 land-project">
 
         <div class="project-details">
           <a href="https://shart-jpates2.herokuapp.com/", target="_blank"><h2 class="project-name">shArt</h2></a>
@@ -137,7 +177,7 @@
       </div>
 
 
-      <div class="project project-4 land-project">
+      <div class="project project-5 land-project">
 
         <div class="project-details">
           <a href="https://watchlist-bcn1046.herokuapp.com/", target="_blank"><h2 class="project-name">The Watchlist</h2></a>
@@ -175,7 +215,7 @@
       </div>
 
 
-      <div class="project project-5 land-project">
+      <div class="project project-6 land-project">
 
         <div class="project-details">
           <a href="https://myprofile-jpates2.herokuapp.com/", target="_blank"><h2 class="project-name">Profile v1.0</h2></a>

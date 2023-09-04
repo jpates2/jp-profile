@@ -1,5 +1,44 @@
 const pause = 4000;
 
+// pitstop scroll photos
+
+
+const pitstopPhotoContainer = document.querySelector(".pitstop-photos-container");
+const pitstopPhotos = document.querySelector(".pitstop-photos");
+const pitstopPhoto = document.querySelectorAll(".pitstop-photo");
+const pitstopPhotoEx = document.querySelector(".pitstop-photo");
+
+const pitstopPhotoScoll = function() {
+  let currentPitstopSlide = 1;
+  let interval;
+
+  function startPitstopSlider() {
+  interval = setInterval(function() {
+    const slideHeight = pitstopPhotoEx.clientHeight;
+    pitstopPhotos.scrollTop += slideHeight;
+    firstPitstopSlide();
+  }, pause);
+
+    function firstPitstopSlide() {
+      currentPitstopSlide++;
+      if (currentPitstopSlide > pitstopPhoto.length) {
+        currentPitstopSlide = 1;
+        pitstopPhotos.scrollTop = 0;
+      }
+    }
+  }
+  function stopPitstopSlider() {
+    clearInterval(interval);
+  }
+
+  pitstopPhotoContainer.addEventListener("mouseenter", stopPitstopSlider);
+  pitstopPhotoContainer.addEventListener("mouseleave", startPitstopSlider);
+
+  startPitstopSlider();
+};
+
+pitstopPhotoScoll();
+
 
 // fanfind scroll photos
 
