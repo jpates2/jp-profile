@@ -9,18 +9,21 @@ const btnScrollToHome = document.querySelector("#home");
 const btnScrollToProject = document.querySelector("#projects");
 const btnScrollToAbout = document.querySelector("#about");
 const btnScrollToCert = document.querySelector("#cert");
+const btnScrollToStack = document.querySelector("#stack");
 const btnScrollToContact = document.querySelector("#contact");
 
 const mobScrollToHome = document.querySelector("#mob-home");
 const mobScrollToProject = document.querySelector("#mob-projects");
 const mobScrollToAbout = document.querySelector("#mob-about");
 const mobScrollToCert = document.querySelector("#mob-cert");
+const mobScrollToStack = document.querySelector("#mob-stack");
 const mobScrollToContact = document.querySelector("#mob-contact");
 
 const homeSection = document.querySelector(".home-section");
 const projectSection = document.querySelector(".project-section");
 const aboutSection = document.querySelector(".about-section");
 const certSection = document.querySelector(".cert-section");
+const stackSection = document.querySelector(".stack-section");
 const contactSection = document.querySelector(".contact-section");
 
 const backdrop = document.querySelector(".backdrop");
@@ -56,6 +59,7 @@ const hiddenProjects = function () {
     projectSection.classList.remove("hidden");
     aboutSection.classList.remove("hidden");
     certSection.classList.remove("hidden");
+    stackSection.classList.remove("hidden");
     contactSection.classList.remove("hidden");
     projectSection.classList.add("fade-in");
     // projectSection.classList.remove("hidden-delay");
@@ -99,6 +103,12 @@ btnScrollToCert.addEventListener("click", function(e) {
   })
 })
 
+btnScrollToStack.addEventListener("click", function(e) {
+  stackSection.scrollIntoView({
+    behavior: "smooth"
+  })
+})
+
 mobScrollToProject.addEventListener("click", function(e) {
   backdrop?.classList.add("hidden");
   projectSection.scrollIntoView({
@@ -130,6 +140,13 @@ mobScrollToContact.addEventListener("click", function(e) {
 mobScrollToCert.addEventListener("click", function(e) {
   backdrop?.classList.add("hidden");
   certSection.scrollIntoView({
+    behavior: "smooth"
+  })
+})
+
+mobScrollToStack.addEventListener("click", function(e) {
+  backdrop?.classList.add("hidden");
+  stackSection.scrollIntoView({
     behavior: "smooth"
   })
 })
