@@ -1,0 +1,42 @@
+.stack-squares-container {
+  display: flex;
+  justify-content: center;
+}
+
+.stack-squares {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 32px;
+
+  h4 {
+    margin-bottom: 12px;
+  }
+}
+
+.stack-square-dark {
+  background-color: rgba(245, 138, 7, 0.85);
+}
+
+.stack-square-light {
+  background-color: rgba(73, 106, 129, 0.85);
+  color: $light-grey;
+}
+
+.stack-square {
+  height: 180px;
+  width: 180px;
+  border-radius: 16px;
+  text-align: center;
+  padding: 24px;
+}
+
+.stack-img {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
