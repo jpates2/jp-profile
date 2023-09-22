@@ -256,6 +256,66 @@
   .slide-hidden-right {
     transform: translateX(-10vw);
   }
+
+  // stack
+  .stack-squares {
+    grid-template-columns: 1fr 1fr;
+    // gap: 32px;
+
+    h4 {
+      font-size: 16px;
+      // margin-bottom: 8px;
+    }
+  }
+
+  .stack-square {
+    height: 120px;
+    width: 120px;
+    border-radius: 16px;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .stack-img {
+    height: 60px;
+    width: 60px;
+  }
+
+  #stack-square-javascript {
+    order: 1;
+  }
+
+  #stack-square-react {
+    order: 2;
+  }
+
+  #stack-square-ruby {
+    order: 4;
+  }
+
+  #stack-square-css {
+    order: 3;
+  }
+
+  #stack-square-html {
+    order: 5;
+  }
+
+  #stack-square-tailwind {
+    order: 6;
+  }
+
+  #stack-square-bootstrap {
+    order: 8;
+  }
+
+  #stack-square-sql {
+    order: 7;
+  }
+
+  #stack-square-github {
+    order: 9;
+  }
 }
 
 // @media only screen and (min-width: 1000px) and (max-width: 1100px) {
