@@ -32,6 +32,14 @@
   padding: 24px;
 }
 
+.stack-squares-container {
+  transition: opacity 3s;
+}
+
+.stack-square-opacity {
+  opacity: 0.2;
+}
+
 .stack-img {
   height: 80px;
   width: 80px;
