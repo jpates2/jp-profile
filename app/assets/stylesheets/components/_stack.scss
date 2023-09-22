@@ -40,3 +40,20 @@
   justify-content: center;
   align-content: center;
 }
+
+.stack-square-dark:hover {
+  background-color: rgba(245, 138, 7, 0.7);
+
+  .stack-img {
+    scale: 1.2;
+  }
+}
+
+.stack-square-light:hover {
+  background-color: rgba(73, 106, 129, 0.7);
+  color: $light-grey;
+
+  .stack-img {
+    scale: 1.2;
+  }
+}
