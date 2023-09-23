@@ -25,6 +25,7 @@ const aboutSection = document.querySelector(".about-section");
 const certSection = document.querySelector(".cert-section");
 const stackSection = document.querySelector(".stack-section");
 const contactSection = document.querySelector(".contact-section");
+const footer = document.querySelector(".footer");
 
 const backdrop = document.querySelector(".backdrop");
 
@@ -61,6 +62,7 @@ const hiddenProjects = function () {
     certSection.classList.remove("hidden");
     stackSection.classList.remove("hidden");
     contactSection.classList.remove("hidden");
+    footer.classList.remove("hidden");
     projectSection.classList.add("fade-in");
     // projectSection.classList.remove("hidden-delay");
   }, 2000);
