@@ -2,7 +2,7 @@
 
 Profile page displaying projects, personal info and contact details. 
 
-:round_pushpin: [wwww.jesspates.com](https://www.jesspates.com/)
+:round_pushpin: https://jp-profile.onrender.com/
 
 
 <section>
